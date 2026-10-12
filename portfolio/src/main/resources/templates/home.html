@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  >
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safa Oujri - Personnal Portfolio </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!--    loading animation -->
+    <div th:replace="~{fragment/loader :: loader}"></div>
+<!--    Custom Script-->
+<!--    Header-->
+    <div th:replace="~{fragment/header :: site-header}"></div>
+<!--    Hero Section-->
+    <div th:replace="~{fragment/hero :: hero-section}"></div>
+<!--    About Section -->
+    <div th:replace="~{fragment/about :: about-section}"></div>
+<!--    Project Section-->
+    <div th:replace="~{fragment/project :: project-section}"></div>
+<!--Experience Section-->
+    <div th:replace="~{fragment/experience :: experience-section}"></div>
+<!--Certification Section-->
+    <div th:replace="~{fragment/certification :: certification-section}"></div>
+
+<!--    Contact Section-->
+    <div th:replace="~{fragment/contact :: contact-section}"></div>
+<!--    Footer Section-->
+    <div th:replace="~{fragment/footer :: footer-section}"></div>
+
+
+    <!--    custom script file-->
+<!--    background shapes-->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-1"></div>
+
+<!--    hero section-->
+
+
+
+    <script th:src="@{/js/script.js}"></script>
+
+</body>
+</html>

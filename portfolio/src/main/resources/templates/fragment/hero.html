@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="hero-section">
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">Hi there, I'm</div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Oujri Safa</span>
+                </h1>
+                <h2 class="hero-subtitle" >Software Engineer,DevOps Enthusiast </h2>
+                <p class="hero-description">
+                    State engineer in computer science and networks (MIAGE), passionate about software development, DevOps and security. I build reliable applications and look for a pre-employment internship to grow within a technical team.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View my work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Contact me </a>
+                </div>
+
+                <div class="social-links">
+
+                    <a href="tel:+212654844393"
+                       class="social-link"
+                       aria-label="Téléphone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+
+                    <a href="mailto:safaeoujri2@gmail.com"
+                       class="social-link"
+                       aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/safa-oujri-552ba4259"
+                       class="social-link"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://github.com/safaoujri"
+                       class="social-link"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="hero-visual" >
+                <div class="hero-visual-inner">
+                    <div class="hero-visual-frame">
+                        <img th:src="@{/Images/image-profile.JPG}"
+                             alt="profile"
+                             class="profile-image">
+                    </div>
+
+
+                </div>
+                <div class="hero-stats stats-1">
+                    <div class="hero-stats-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Défiler vers le bas">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator-line">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </a>
+
+    </section>
+
+</th:block>
+</body>
+</html>

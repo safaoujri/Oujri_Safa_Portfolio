@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="certification-section">
+    <section class="section certification" id="certification">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Certificats</h2>
+                <p class="section-subtitle">
+                    Every course is a step forward: here are the certifications that shaped my skills as a software and DevOps engineer
+                </p>
+            </div>
+
+            <!-- Filtres -->
+            <div class="certification-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+                <button class="filter-btn" data-filter="dev">Development</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="lang">Language</button>
+            </div>
+
+            <div class="certification-container">
+
+                <div class="certification-card" data-category="cloud">
+                    <div class="certification-icon"><i class="fas fa-infinity"></i></div>
+                    <h3 class="certification-title">DevOps and Software Engineering</h3>
+                    <span class="certification-tag">Cloud &amp; DevOps</span>
+                </div>
+
+                <div class="certification-card" data-category="dev">
+                    <div class="certification-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="certification-title">Software Engineering</h3>
+                    <span class="certification-tag">Development</span>
+                </div>
+
+                <div class="certification-card" data-category="dev">
+                    <div class="certification-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 class="certification-title">Building Scalable Java Microservices with Spring Boot and Spring Cloud</h3>
+                    <span class="certification-tag">Development</span>
+                </div>
+
+                <div class="certification-card" data-category="cloud">
+                    <div class="certification-icon"><i class="fab fa-aws"></i></div>
+                    <h3 class="certification-title">DevOps sur AWS : Codez, construisez et testez</h3>
+                    <span class="certification-tag">Cloud &amp; DevOps</span>
+                </div>
+
+                <div class="certification-card" data-category="cloud">
+                    <div class="certification-icon"><i class="fab fa-google"></i></div>
+                    <h3 class="certification-title">Google Cloud IAM and Networking for AWS Professionals</h3>
+                    <span class="certification-tag">Cloud &amp; DevOps</span>
+                </div>
+
+                <div class="certification-card" data-category="cloud">
+                    <div class="certification-icon"><i class="fab fa-docker"></i></div>
+                    <h3 class="certification-title">Introduction to Containers w/ Docker, Kubernetes &amp; OpenShift</h3>
+                    <span class="certification-tag">Cloud &amp; DevOps</span>
+                </div>
+
+                <div class="certification-card" data-category="dev">
+                    <div class="certification-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="certification-title">Software Development on SAP HANA</h3>
+                    <span class="certification-tag">Development</span>
+                </div>
+
+                <div class="certification-card" data-category="lang">
+                    <div class="certification-icon"><i class="fas fa-language"></i></div>
+                    <h3 class="certification-title">Étudier en France : French Intermediate course B1-B2</h3>
+                    <span class="certification-tag">Language</span>
+                </div>
+
+                <div class="certification-card" data-category="ai">
+                    <div class="certification-icon"><i class="fab fa-python"></i></div>
+                    <h3 class="certification-title">Apprentissage automatique avec Python</h3>
+                    <span class="certification-tag">AI</span>
+                </div>
+
+                <div class="certification-card" data-category="ai">
+                    <div class="certification-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="certification-title">Neural Networks and Deep Learning</h3>
+                    <span class="certification-tag">AI</span>
+                </div>
+
+                <div class="certification-card" data-category="cloud">
+                    <div class="certification-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="certification-title">Virtual Networks in Azure</h3>
+                    <span class="certification-tag">Cloud &amp; DevOps</span>
+                </div>
+
+                <div class="certification-card" data-category="dev">
+                    <div class="certification-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                    <h3 class="certification-title">React Native</h3>
+                    <span class="certification-tag">Development</span>
+                </div>
+
+                <div class="certification-card" data-category="dev">
+                    <div class="certification-icon"><i class="fab fa-react"></i></div>
+                    <h3 class="certification-title">React Basics</h3>
+                    <span class="certification-tag">Development</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</th:block>
+</body>
+</html>

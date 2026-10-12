@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="footer-section">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">Oujri <span>Safa</span></a>
+                    <p class="footer-text">
+                        Software and DevOps engineer, passionate about building reliable applications and solving complex problems through code.
+                    </p>
+                    <div class="footer-social">
+                        <a href="tel:+212654844393" class="footer-social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:safaeoujri2@gmail.com" class="footer-social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/safa-oujri-552ba4259" class="footer-social-link"
+                           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/safaoujri" class="footer-social-link"
+                           target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> My Work</a></li>
+                        <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                        <li><a href="#certification"><i class="fas fa-chevron-right"></i> Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-location-dot"></i> Casablanca, Morocco</li>
+                        <li><i class="fas fa-envelope"></i> safaeoujri2@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +212 654 844 393</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Safa Oujri. All rights reserved.</p>
+                <p>Built with Spring Boot &amp; Thymeleaf</p>
+            </div>
+        </div>
+
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+</th:block>
+</body>
+</html>

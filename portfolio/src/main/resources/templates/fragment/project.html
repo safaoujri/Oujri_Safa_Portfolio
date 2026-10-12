@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<th:block th:fragment="project-section">
+
+    <section class="project section" id="projects">
+
+        <div class="container">
+
+            <div class="section-title-container">
+                <h2 class="section-title">My Academic Projects</h2>
+                <p class="section-subtitle">
+                    Discover my academic projects, practical work
+                    and the technologies I have used.
+                </p>
+            </div>
+
+            <div class="project-container">
+
+                <!-- Project 1: AI and Serious Games -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img th:src="@{/Images/proj1.png}"
+                             alt="AI and Serious Games project"
+                             loading="lazy">
+                        <span class="project-category">Artificial Intelligence</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            AI-Based Serious Games
+                        </h3>
+
+                        <p class="project-description">
+                            Development of an interactive serious game
+                            integrating machine learning using KNN,
+                            with an Angular frontend and Spring Boot
+                            microservices.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Angular</span>
+                            <span>Spring Boot</span>
+                            <span>Machine Learning</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/safaoujri/Plateforme-Elearning"
+                           class="project-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <!-- Project: TomorZagora E-commerce -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img th:src="@{/Images/projdatte.png}"
+                             alt="TomorZagora e-commerce application"
+                             loading="lazy">
+                        <span class="project-category">E-commerce</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            TomorZagora | E-commerce Web Application
+                        </h3>
+
+                        <p class="project-description">
+                            Development of an e-commerce application dedicated to selling dates.
+                            Designed a user interface for browsing and selecting products, and built
+                            product and order management features through an admin interface.
+                            Completed in 2 months.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Spring Boot</span>
+                            <span>Thymeleaf</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <a href="https://github.com/safaoujri/Projet_JEE_ecommerce_Dattes"
+                           class="project-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project: DevSearch -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img th:src="@{/Images/projdev.png}"
+                             alt="DevSearch web application"
+                             loading="lazy">
+                        <span class="project-category">Web Development</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            DevSearch | Developer Projects Platform
+                        </h3>
+
+                        <p class="project-description">
+                            Development of a web platform that lets developers search for and
+                            discover projects. Designed a user interface for browsing projects
+                            and submitting new contributions.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <a href="https://github.com/safaoujri/websearch"
+                           class="project-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project: Movie Store -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img th:src="@{/Images/projmovie.png}"
+                             alt="Movie Store web application"
+                             loading="lazy">
+                        <span class="project-category">Web Development</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Movie Store | Online Movie Management Platform
+                        </h3>
+
+                        <p class="project-description">
+                            Development of an online platform for managing movies (2024).
+                            Implemented user management, along with movie search and
+                            filtering features.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>ASP.NET</span>
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                        </div>
+
+                        <a href="https://github.com/safaoujri/MovieStore"
+                           class="project-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project: HR Decision-Support Solution -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img th:src="@{/Images/HR.png}"
+                             alt="HR decision-support dashboard"
+                             loading="lazy">
+                        <span class="project-category">Business Intelligence</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            HR Decision-Support Solution
+                        </h3>
+
+                        <p class="project-description">
+                            Implementation of a business intelligence solution for Human Resources.
+                            Designed a data warehouse to centralize HR data, developed ETL processes
+                            to extract, transform and load it, and built interactive Power BI
+                            dashboards to analyze HR indicators.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Data Warehouse</span>
+                            <span>ETL</span>
+                            <span>Power BI</span>
+                        </div>
+
+                        <a href="https://github.com/safaeoujri/REPLACE-WITH-REPOSITORY"
+                           class="project-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+</th:block>
+
+</body>
+</html>
