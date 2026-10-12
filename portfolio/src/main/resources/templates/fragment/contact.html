@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <th:block th:fragment="contact-section">
-        <section class="section-contact" id="contact">
-            <div class="container">
-                <div class="section-title-container">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="section-subtitle">    I'm currently looking for a pre-employment internship in software development and DevOps. Let's connect and see how I can contribute to your team.
-                    </p>
-
-                </div>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3 class="contact-heading">Let's Build something Amazing Together</h3>
-                        <p class="contact-text">     Got an opportunity or a project in mind? Let's build something great together.
-
-
-
-                        </p>
-                    </div>
-                    <div class="contact-links">
-                        <a href="tel: +212 654844393" class="contact-link">
-                            <div class="contact-link-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">Phone</span>
-                                <span class="contact-link-value">+212 654844393</span>
-                            </div>
-                        </a>
-                        <a href="mailto:safaeoujri2@gmail.com" class="contact-link">
-                            <div class="contact-link-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">Email</span>
-                                <span class="contact-link-value">safaeoujri2@gmail.com</span>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/safa-oujri-552ba4259" target="_blank" class="contact-link">
-                            <div class="contact-link-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-link-text">
-                                <span class="contact-link-label">LinkedIn</span>
-                                <span class="contact-link-value">Safa Oujri</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="contact-form">
-                        <form  id="contactForm" action="#" method="post" novalidate>
-                            <div class="form-group">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Safa Ou">
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="SafaOu@exmple.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="form-label">Your  Message</label>
-                                <textarea  class="form-control" name="message" id="message" placeholder="Type your Message here"></textarea>
-                            </div>
-                            <button class="btn btn-primary" type="submit">
-                                Send Message <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-
-                    </div>
-                </div>
+<body>
+<th:block th:fragment="contact-section">
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    I'm currently looking for a pre-employment internship in software development and DevOps. Let's connect and see how I can contribute to your team.
+                </p>
             </div>
 
-        </section>
-    </th:block>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Build Something Amazing Together</h3>
+                    <p class="contact-text">
+                        Got an opportunity or a project in mind? Let's build something great together.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="tel:+212654844393" class="contact-link">
+                        <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">Phone</span>
+                            <span class="contact-link-value">+212 654844393</span>
+                        </div>
+                    </a>
+                    <a href="mailto:safaeoujri2@gmail.com" class="contact-link">
+                        <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">safaeoujri2@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/safa-oujri-552ba4259" target="_blank"
+                       rel="noopener noreferrer" class="contact-link">
+                        <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">Safa Oujri</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="post" novalidate>
+                        <input type="hidden" name="access_key" value="a35c5f7d-0b56-49e5-ba99-eb91fac6b329">
+                        <input type="hidden" name="subject" value="New message from my portfolio">
+                        <input type="hidden" name="from_name" value="Portfolio">
+                        <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" name="name" id="name"
+                                   placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                   placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" name="message" id="message" rows="5"
+                                      placeholder="Type your message here" required></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit" id="submitBtn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</body>
 </html>
